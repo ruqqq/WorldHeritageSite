@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="vertical"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent">
+	<ScrollView
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_weight="1">
+		<LinearLayout
+			android:orientation="vertical"
+			android:layout_width="fill_parent"
+			android:layout_height="fill_parent">
+			<LinearLayout
+				android:orientation="vertical"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:layout_margin="10dp">
+				<TextView android:text="@string/rating2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textAppearance="?android:attr/textAppearanceMedium" />
+				<RatingBar
+					android:id="@+id/rtRating"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_gravity="center"
+					android:numStars="4"
+					android:max="4"
+					android:saveEnabled="true"/>
+			</LinearLayout>
+			
+			<LinearLayout
+				android:orientation="vertical"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:layout_margin="10dp">
+				<TextView android:text="@string/comment" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textAppearance="?android:attr/textAppearanceMedium" />
+				<EditText
+					android:id="@+id/etComment"
+					android:hint="@string/i_find_that_this_place"
+					android:layout_width="fill_parent"
+					android:layout_height="100dp"
+					android:gravity="top"
+					android:inputType="textMultiLine" />
+			</LinearLayout>
+			
+			<LinearLayout
+				android:orientation="vertical"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:layout_margin="10dp">
+				<TextView android:text="@string/your_details" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textAppearance="?android:attr/textAppearanceMedium" />
+				<EditText android:hint="@string/email" android:id="@+id/etEmail" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+				<EditText android:hint="@string/contact_number" android:id="@+id/etPhoneNumber" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+			</LinearLayout>	
+	</LinearLayout>
+	</ScrollView>
+	<LinearLayout
+		android:orientation="horizontal"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:gravity="center|center_vertical"
+		android:background="@android:drawable/bottom_bar">
+		<Button
+			android:text="@string/cancel"
+			android:id="@+id/btnCancel"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_weight="1" />
+		<Button
+			android:text="@string/submit"
+			android:id="@+id/btnSubmit"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_weight="1" />
+	</LinearLayout>
+</LinearLayout>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/whslist"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <LinearLayout
+    	android:orientation="horizontal"
+    	android:layout_width="fill_parent"
+    	android:layout_height="45dp"
+    	android:background="@drawable/bg_titlebar"
+    	android:padding="8dp"
+    	android:gravity="center">
+    	<TextView
+    		android:text="@string/app_name"
+    		android:id="@+id/app_title"
+    		android:layout_width="wrap_content"
+    		android:layout_height="fill_parent"
+    		android:layout_gravity="center|center_vertical"
+    		android:focusable="true"
+    		android:focusableInTouchMode="true"
+    		android:textAppearance="?android:attr/textAppearanceLarge"
+    		android:textStyle="bold"
+   			android:singleLine="true"
+    		android:ellipsize="marquee"
+    		android:textColor="#FFFFFFFF"
+    		android:shadowColor="#BBFFFFFF"
+    		android:shadowRadius="8.75" />
+    </LinearLayout>
+    <ListView android:id="@android:id/list" android:layout_width="fill_parent" android:layout_height="fill_parent">
+</ListView>
+</LinearLayout>

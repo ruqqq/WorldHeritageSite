@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">UNESCO World Heritage Sites</string>
+    
+    <string name="menu_sort_az">Sort A-Z</string>
+    <string name="menu_about">About</string>
+    
+    <string name="menu_my_location">My Location</string>
+    <string name="menu_satellite_mode">Satellite Mode</string>
+    <string name="menu_normal_mode">Normal Mode</string>
+    
+    <string name="menu_go_to_wiki">Go to Wiki</string>
+    
+    <string name="about">About</string>
+    <string name="about_text">C345 Assignment 1\nCreated by Faruq</string>
+    
+    <string name="qa_map">Map</string>
+    <string name="qa_info">Info</string>
+    <string name="qa_feedback">Feedback</string>
+    <string name="qa_wiki">Wiki</string>
+    <string name="qa_delete">Delete</string>
+    
+    <string name="qa_more_info">More Info</string>
+    
+    <string name="chooser_go_to_wiki">Go to Wiki:</string>
+    <string name="chooser_send_feedback">Send Feedback:</string>
+    
+    <string name="finding_location">Still finding your location...</string>
+    <string name="location_updated">Location updated successfully.</string>
+    <string name="updating_location">Updating current location...</string>
+    <string name="distance_bearing">km away, N</string>
+    <string name="calculating_distance">Calculating distance/bearing...</string>
+    
+    <string name="feedback_for">Feedback for </string>
+    <string name="rating">Rating: </string>
+    <string name="my_contact_number">My Contact Number: </string>
+    
+    <string name="source">Source: </string>
+    <string name="rating2">Rating</string>
+    <string name="comment">Comment</string>
+    <string name="i_find_that_this_place">I find that this place...</string>
+    <string name="your_details">Your Details</string>
+    <string name="email">Email</string>
+    <string name="contact_number">Contact Number</string>
+    <string name="cancel">Cancel</string>
+    <string name="submit">Submit</string>
+</resources>

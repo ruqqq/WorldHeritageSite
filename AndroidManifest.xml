@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+      package="sg.ruqqq.WHSFinder"
+      android:versionCode="1"
+      android:versionName="1.0">
+    <application android:icon="@drawable/icon" android:label="@string/app_name">
+        <activity android:name=".WHSListActivity"
+                  android:label="@string/app_name"
+                  android:theme="@android:style/Theme.Light.NoTitleBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+    <uses-library android:name="com.google.android.maps"></uses-library>
+	<activity android:theme="@android:style/Theme.Light.NoTitleBar" android:name=".ViewOnMapActivity"></activity>
+	<activity android:theme="@android:style/Theme.Light.NoTitleBar" android:name=".DetailViewActivity"></activity>
+	<activity android:theme="@android:style/Theme.Light.NoTitleBar" android:name=".PlaceDetailsActivity"></activity>
+	<activity android:theme="@android:style/Theme.Light.NoTitleBar" android:name=".FeedbackActivity"></activity>
+</application>
+
+
+
+<uses-sdk android:minSdkVersion="4"></uses-sdk>
+<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"></uses-permission>
+<uses-permission android:name="android.permission.INTERNET"></uses-permission>
+</manifest> 

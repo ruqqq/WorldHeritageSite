@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="vertical"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent">
+    <LinearLayout
+  		android:id="@+id/title_bar"
+    	android:orientation="horizontal"
+    	android:layout_width="fill_parent"
+    	android:layout_height="45dp"
+    	android:background="@drawable/bg_titlebar">
+    	<ImageButton
+    		android:id="@+id/btnHome"
+    		android:src="@drawable/ic_title_home" 
+    		android:background="@drawable/btn_titlebar_bg"
+    		android:layout_width="wrap_content"
+    		android:layout_height="wrap_content"
+    		android:padding="10dp" />
+    	<ImageView
+    		android:src="@drawable/cut_lines_titlebar" 
+    		android:layout_width="wrap_content"
+    		android:layout_height="fill_parent"
+    		android:scaleType="fitXY" />
+    	<TextView
+    		android:id="@+id/pName"
+    		android:layout_width="wrap_content"
+    		android:layout_height="fill_parent"
+    		android:layout_gravity="center_vertical"
+    		android:layout_marginLeft="8dp"
+    		android:layout_marginRight="8dp"
+    		android:layout_marginTop="8dp"
+    		android:layout_weight="1"
+    		android:focusable="true"
+    		android:focusableInTouchMode="true"
+    		android:textAppearance="?android:attr/textAppearanceMedium"
+    		android:textStyle="bold"
+   			android:singleLine="true"
+    		android:ellipsize="marquee"
+    		android:scrollHorizontally="true"
+    		android:textColor="#FFFFFFFF" />
+    </LinearLayout>
+	<TabHost
+    	android:id="@android:id/tabhost"
+    	android:layout_width="fill_parent"
+    	android:layout_height="fill_parent">
+	    <LinearLayout
+	        android:orientation="vertical"
+	        android:layout_width="fill_parent"
+	        android:layout_height="fill_parent">
+	        <TabWidget
+	            android:id="@android:id/tabs"
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"
+	            android:divider="@drawable/minitab_divider" />
+	        <FrameLayout
+	            android:id="@android:id/tabcontent"
+	            android:layout_width="fill_parent"
+	            android:layout_height="fill_parent" />
+	    </LinearLayout>
+	</TabHost>
+</LinearLayout>
